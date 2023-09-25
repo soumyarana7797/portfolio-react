@@ -1,10 +1,12 @@
 import { FormEvent, useState } from "react"
+interface data {
+    obj : string;
+}
 
-
-const ListView: React.FC = (obj: any) => {
+const ListView: React.FC<data> = ({ obj }) => {
     return (
     <div>
-        <h2>Packages List</h2>
+        <p>{ obj }</p>
 
     </div>
     )

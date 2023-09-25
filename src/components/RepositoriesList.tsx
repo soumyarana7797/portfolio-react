@@ -28,6 +28,7 @@ const RepositoriesList: React.FC = () => {
         {loading && <h3>{loading}</h3>}
         {!error && !loading && 
         <tbody>
+            <h2>Packages List</h2>
             {data.map((object: string, i: number) => <ListView obj={object} key={i} />)}
         </tbody>
         
